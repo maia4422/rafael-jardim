@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+div#parent {
+	height: 100vh;
+	background-color: #072d4c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header#header {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	background-color: #fde907;
+	font-size: 40px;
+	color: #072d4c;
+	text-align: center;
+	padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img#fotorafael {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+img#fotonumero1 {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: white;
+	margin-top: 100px;
+}
+img#fotonumero2 {
+	display: none;
+}
+img#fotoemconstrucao {
+	margin-top: 2.5em;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+	display: flex;
+	flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 800px) {
+	main {
+		display: contents;
+	}
+	header#header {
+		font-size: 30px;
+		padding: 8px;
+	}
+	img#fotonumero1 {
+		display: none;
+	}
+	img#fotonumero2 {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		background-color: white;
+	}
+	img#fotorafael {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100%;
+	}
+	img#fotoemcostrucao {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 80%;
+	}
 }
